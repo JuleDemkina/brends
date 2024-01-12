@@ -43,6 +43,10 @@ body {
 .swiper {
   margin-left: 16px;
 }
+.swiper-pagination {
+  position: relative;
+  margin-top: 16px;
+}
 
 .read-more {
   display: none;
