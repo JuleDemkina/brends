@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: local("TT Lakes Regular"),
+    url("../fonts/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTLakes-Regular.eot") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: local("TT Lakes Medium"),
+    url("../fonts/TTLakes-Medium.woff") format("woff"),
+    url("../fonts/TTLakes-Medium.eot") format("embedded-opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #f8f8f8;
+}
+.title-brends {
+  display: block;
+  padding: 16px;
+  margin-bottom: 16px;
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  background: linear-gradient(270deg, #f8f8f8 0%, #fff 98.61%);
+}
+.swiper {
+  margin-left: 16px;
+}
+
+.read-more {
+  display: none;
+}
+
+.read-more:focus,
+.read-more:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.read-more:focus {
+  border: 2px solid #d9fff5;
+}
+
+.button--text {
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+}
+
+.read-more__img {
+  transition: 0.8s;
+}
+.read-more__img--rotate {
+  transform: rotate(180deg);
+  transition: 0.8s;
+}
+@media (min-width: 768px) {
+  .title-brends {
+    padding-left: 24px;
+  }
+  .slider-1 .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 12px;
+  }
+  .swiper {
+    height: 160px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 24px;
+  }
+
+  .swiper--no-hidden {
+    height: 100%;
+  }
+  .swiper-slide {
+    min-width: 224px;
+    max-width: 224px;
+    height: 72px;
+    margin: 0;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+  .read-more {
+    display: flex;
+    align-items: center;
+    min-width: 140px;
+
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-brends {
+    padding-left: 32px;
+  }
+  .read-more {
+    margin: 32px;
+  }
+}
